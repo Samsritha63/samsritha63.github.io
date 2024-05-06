@@ -12,34 +12,60 @@ import { useState } from "react";
 const portfolioData = [
   {
     id: 2,
-    name: "Ecommerce",
+    name: "Flipkart Home Page",
     image: ImageOne,
-    link: "",
+    link: "https://samsritha63.github.io/FlipCart_homePage_clone/",
   },
   {
-    id: 3,
-    name: "Notes App",
-    link: "",
+    id: 2,
+    name: "Calculator App",
+    link: "https://samsritha63.github.io/Calculator-App/",
     image: ImageTwo,
   },
   {
     id: 2,
-    name: "Supplier Design",
+    name: "Music Player",
     image: ImageThree,
-    link: "",
+    link: "https://samsritha63.github.io/Music-Player/",
   },
   {
     id: 2,
-    name: "Todo App",
+    name: "To-do",
     image: ImageFour,
-
-    link: "",
+    link: "https://samsritha63.github.io/To-Do-List/",
+  },
+  {
+    id: 2,
+    name: "Personal Note Creator",
+    image: ImageOne,
+    link: "https://github.com/Samsritha63/Personal_Note_Creator",
+  },
+  {
+    id: 2,
+    name: "Campus Connect",
+    image: ImageTwo,
+    links: [
+      "https://github.com/Samsritha63/Campus_Connect_Frontend",
+      "https://github.com/Samsritha63/Campus_Connect_Backend"
+    ]
   },
   {
     id: 3,
-    name: "Shopping cart design",
+    name: "App Designs Dark",
     image: ImageFive,
-    link: "",
+    link: "https://www.figma.com/file/gE2Bw6FddqHUx6jS9c3m58/Untitled?type=design&node-id=0%3A1&mode=design&t=9qF16uGF7O01H1Mo-1",
+  },
+  {
+    id: 3,
+    name: "App Designs Bright",
+    image: ImageFive,
+    link: "https://www.figma.com/file/tntPwbDABT27QjTnLVllO7/Doctorspectra-Bright?type=design&mode=design&t=9qF16uGF7O01H1Mo-1",
+  },
+  {
+    id: 3,
+    name: "App Designs Color",
+    image: ImageFive,
+    link: "https://www.figma.com/file/9CAcHulCm8O6adc9Tp4WdL/Doctorspectra-UI-Design?type=design&node-id=806%3A2&mode=design&t=9qF16uGF7O01H1Mo-1",
   },
 ];
 
@@ -50,7 +76,7 @@ const filterData = [
   },
   {
     filterId: 2,
-    label: "Developement",
+    label: "Development",
   },
   {
     filterId: 3,
@@ -59,7 +85,7 @@ const filterData = [
 ];
 
 const Portfolio = () => {
-  const [filteredvalue, setFilteredValue] = useState(1);
+  const [filteredValue, setFilteredValue] = useState(1);
   const [hoveredValue, setHoveredValue] = useState(null);
 
   function handleFilter(currentId) {
@@ -70,16 +96,10 @@ const Portfolio = () => {
     setHoveredValue(index);
   }
 
-  console.log("====================================");
-  console.log(hoveredValue);
-  console.log("====================================");
-
   const filteredItems =
-    filteredvalue === 1
+    filteredValue === 1
       ? portfolioData
-      : portfolioData.filter((item) => item.id === filteredvalue);
-
-  console.log(filteredItems);
+      : portfolioData.filter((item) => item.id === filteredValue);
 
   return (
     <section id="portfolio" className="portfolio">
@@ -91,7 +111,7 @@ const Portfolio = () => {
         <ul className="portfolio__content__filter">
           {filterData.map((item) => (
             <li
-              className={item.filterId === filteredvalue ? "active" : ""}
+              className={item.filterId === filteredValue ? "active" : ""}
               onClick={() => handleFilter(item.filterId)}
               key={item.filterId}
             >
@@ -108,7 +128,7 @@ const Portfolio = () => {
               onMouseLeave={() => handleHover(null)}
             >
               <div className="portfolio__content__cards__item__img-wrapper">
-                <a>
+                <a href={item.link || item.links[0]} target="_blank" rel="noopener noreferrer">
                   <img alt="dummy data" src={item.image} />
                 </a>
               </div>
@@ -116,7 +136,17 @@ const Portfolio = () => {
                 {index === hoveredValue && (
                   <div>
                     <p>{item.name}</p>
-                    <button>Visit</button>
+                    {item.links ? (
+                      item.links.map((link, i) => (
+                        <a key={i} href={link} target="_blank" rel="noopener noreferrer">
+                          <button>Visit Link {i + 1}</button>
+                        </a>
+                      ))
+                    ) : (
+                      <a href={item.link} target="_blank" rel="noopener noreferrer">
+                        <button>Visit</button>
+                      </a>
+                    )}
                   </div>
                 )}
               </div>
@@ -127,4 +157,5 @@ const Portfolio = () => {
     </section>
   );
 };
+
 export default Portfolio;

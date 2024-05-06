@@ -33,7 +33,7 @@ const Resume = () => {
                   color : 'var(--yellow-theme-sub-text-color)',
                   border : '1.5px solid var(--yellow-theme-main-color)'
                 }}
-                date="2020 - Present"
+                date={item.date}
                 icon={<MdWork/>}
                 iconStyle={{
                   background : '#181818',
@@ -62,7 +62,7 @@ const Resume = () => {
             layout={"1-column"}
             lineColor="var(--yellow-theme-main-color)"
           >
-          {data.education.map((item, i) => (
+            {data.education.map((item, i) => (
               <VerticalTimelineElement
                 key={i}
                 className="timeline__experience__vertical-timeline-element"
@@ -71,7 +71,7 @@ const Resume = () => {
                   color : 'var(--yellow-theme-sub-text-color)',
                   border : '1.5px solid var(--yellow-theme-main-color)'
                 }}
-                date="2020 - Present"
+                date={item.date}
                 icon={<MdWork/>}
                 iconStyle={{
                   background : '#181818',
@@ -92,7 +92,7 @@ const Resume = () => {
 
               </VerticalTimelineElement>
             ))}
-            </VerticalTimeline>
+          </VerticalTimeline>
         </div>
       </div>
     </section>

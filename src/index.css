@@ -5,7 +5,12 @@
 
 
     --yellow-theme-background-color : #1d1d1d;
-    --yellow-theme-main-color : #ffdd40;
+    /* --yellow-theme-main-color : #ffdd40; */
+    /* --yellow-theme-main-color : #7fff00; */
+    /* --yellow-theme-main-color : #ff0066; */
+    --yellow-theme-main-color : #00bfff;
+
+
     --yellow-theme-sub-text-color : #ffffff;
     --yellow-theme-nav-background-color : #181818;
 }

@@ -9,11 +9,11 @@ import { FaDev, FaDatabase } from "react-icons/fa";
 const personalDetails = [
   {
     label: "Name",
-    value: "John Doe",
+    value: "Dharani Samsritha Pasumarthi",
   },
   {
     label: "Age",
-    value: "27",
+    value: "21",
   },
   {
     label: "Address",
@@ -21,17 +21,16 @@ const personalDetails = [
   },
   {
     label: "Email",
-    value: "demo@example.com",
+    value: "samsritha.63@gmail.com",
   },
   {
     label: "Contact No",
-    value: "+11 3456789056",
+    value: "+91 7036730747",
   },
 ];
 
 const jobSummary =
-  "Seasoned and independent Front End Developer with 5 years of experience in blending the art of design with skill of programming to deliver an immersive and engaging user experience through efficient website development, proactive feature optimization, and relentless debugging. Very passionate about aesthetics and UI design. It is imperative that you provide a thorough and professional approach to your resume. As a Front End Developer you will be judged by your ability to use UX and UI concepts and follow design guidelines. It is about expressing your attention to detail and how you can help implement design ideas for your future employer";
-
+  "Passionate and independent Front End Developer with a strong foundation in software development. With hands-on experience in AI/ML, app development, and testing automation, I bring a unique blend of technical proficiency and creative flair to every project. Skilled in crafting immersive and engaging user experiences through efficient website development, proactive feature optimization, and meticulous debugging. My dedication to aesthetics and UI design ensures that every digital product I create adheres to the highest standards of visual appeal and usability. I thrive on implementing design ideas that elevate user engagement and satisfaction. Ready to leverage my expertise and enthusiasm to contribute to your team and drive your organization's digital success."
 const About = () => {
   return (
     <section id="about" className="about">
