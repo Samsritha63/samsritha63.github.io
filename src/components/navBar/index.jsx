@@ -36,6 +36,11 @@ const Navbar = () => {
   const handleToggleIcon = () => {
     setToggleIcon(!toggleIcon);
   };
+
+  const handleNavItemClick = () => {
+    // Close the navbar when a navigation item is clicked
+    setToggleIcon(false);
+  };
   return (
     <div>
       <nav className="navbar">
@@ -52,6 +57,7 @@ const Navbar = () => {
               <Link
                 className="navbar__container__menu__item__links"
                 to={item.to}
+                onClick={handleNavItemClick}
               >
                 {item.label}
               </Link>
