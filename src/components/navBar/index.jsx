@@ -6,27 +6,27 @@ import "./styles.scss";
 const data = [
   {
     label: "HOME",
-    to: "/",
+    to: "/portfolio-website",
   },
   {
     label: "ABOUT ME",
-    to: "/about",
+    to: "/portfolio-website/about",
   },
   {
     label: "SKILLS",
-    to: "/skills",
+    to: "/portfolio-website/skills",
   },
   {
     label: "RESUME",
-    to: "/resume",
+    to: "/portfolio-website/resume",
   },
   {
     label: "PORTFOLIO",
-    to: "/projects",
+    to: "/portfolio-website/projects",
   },
   {
     label: "CONTACT",
-    to: "/contact",
+    to: "/portfolio-website/contact",
   },
 ];
 
