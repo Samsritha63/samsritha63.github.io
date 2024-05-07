@@ -36,11 +36,11 @@ function App() {
       <div className="App__main-page-content">
       <Routes>
         <Route index path="/portfolio-website" element={<Home />} />
-        <Route path="/portfolio-website/about" element={<About />} />
-        <Route path="/portfolio-website/resume" element={<Resume />} />
-        <Route path="/portfolio-website/skills" element={<Skills />} />
-        <Route path="/portfolio-website/projects" element={<Portfolio />} />
-        <Route path="/portfolio-website/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/resume" element={<Resume />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/projects" element={<Portfolio />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       </div>
 
