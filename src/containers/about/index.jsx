@@ -13,7 +13,7 @@ const personalDetails = [
   },
   {
     label: "Age",
-    value: "21",
+    value: "22",
   },
   {
     label: "Address",
@@ -25,12 +25,12 @@ const personalDetails = [
   },
   {
     label: "Contact No",
-    value: "+91 7036730747",
+    value: "+91 9790496132",
   },
 ];
 
 const jobSummary =
-  "Passionate and independent Front End Developer with a strong foundation in software development. With hands-on experience in AI/ML, app development, and testing automation, I bring a unique blend of technical proficiency and creative flair to every project. Skilled in crafting immersive and engaging user experiences through efficient website development, proactive feature optimization, and meticulous debugging. My dedication to aesthetics and UI design ensures that every digital product I create adheres to the highest standards of visual appeal and usability. I thrive on implementing design ideas that elevate user engagement and satisfaction. Ready to leverage my expertise and enthusiasm to contribute to your team and drive your organization's digital success."
+  "Passionate and independent BackEnd Developer with a strong foundation in software development. With hands-on experience in AI/ML, app development, and testing automation, I bring a unique blend of technical proficiency and creative flair to every project. Skilled in crafting immersive and engaging user experiences through efficient website development, proactive feature optimization, and meticulous debugging. My dedication to aesthetics and UI design ensures that every digital product I create adheres to the highest standards of visual appeal and usability. I thrive on implementing design ideas that elevate user engagement and satisfaction. Ready to leverage my expertise and enthusiasm to contribute to your team and drive your organization's digital success."
 const About = () => {
   return (
     <section id="about" className="about">
@@ -51,7 +51,7 @@ const About = () => {
               transform: "translatex(0px)",
             }}
           >
-            <h3>Front End Developer</h3>
+            <h3>Back End Developer</h3>
             <p>{jobSummary}</p>
           </Animate>
 

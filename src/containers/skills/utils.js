@@ -18,12 +18,19 @@ export const skillsData = [
           skillName: "REACT",
           percentage: "80",
         },
+        {
+          skillName: "ANGULAR",
+          percentage: "65",
+        },
       ],
     },
     {
       label: "BACK END",
       data: [
-        
+        {
+          skillName: "JAVA",
+          percentage: "80",
+        },
         {
           skillName: "PYTHON",
           percentage: "75",
@@ -48,16 +55,16 @@ export const skillsData = [
       label: "DEVELOPER TOOLS",
       data: [
         {
+          skillName: "IntelliJ",
+          percentage: "90",
+        },
+        {
           skillName: "VS Code",
           percentage: "85",
         },
         {
           skillName: "Codeblocks",
           percentage: "70",
-        },
-        {
-          skillName: "IntelliJ",
-          percentage: "75",
         },
         {
           skillName: "Google Colab",

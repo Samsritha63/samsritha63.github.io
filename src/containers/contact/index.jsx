@@ -15,7 +15,7 @@ const Contact = () => {
         </div>
         
         <div className="contact__content__info__item">
-          <strong>Designation:</strong> Frontend Developer
+          <strong>Designation:</strong> Backend Developer
         </div>
         <br />
         <br />
@@ -25,7 +25,7 @@ const Contact = () => {
         <br />
         <br />
         <div className="contact__content__info__item">
-          <strong>Phone:</strong> <a href="tel:+917036730747">+91 7036730747</a>
+          <strong>Phone:</strong> <a href="tel:+919790496132">+91 9790496132</a>
         </div>
         <br />
         <br />

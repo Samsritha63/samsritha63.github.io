@@ -16,7 +16,7 @@ const Home = () => {
         <h1>
           Hello, I'm Dharani Samsritha
           <br />
-          Frontend Developer
+          Backend Developer
         </h1>
       </div>
       <Animate

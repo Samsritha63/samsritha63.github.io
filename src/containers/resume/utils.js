@@ -1,7 +1,13 @@
 export const data = {
   experience: [
     {
-      date: "Jan 2024 - Present",
+      date: "Aug 2024 - Present",
+      title: "Fiserv, Technology Analyst Program",
+      subTitle: "Chennai",
+      description:"Architected and enhanced scalable backend APIs, driving secure and efficient data exchange across enterprise financial systems. Led the implementation of advanced security remediation strategies, ensuring compliance with industry standards and fortifying application integrity against emerging threats."
+    },
+    {
+      date: "Jan 2024 - May 2024",
       title: "Dvara Solutions, AI/ML Intern",
       subTitle: "Dharwad",
       description:
